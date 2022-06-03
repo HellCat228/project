@@ -35,21 +35,36 @@ body {
   margin-left: 255px;
   color: white;
 }
+.menu__list .home:hover {
+  color: #d9d9d9;
+}
 .menu__list .featured {
   margin-right: 75px;
   color: white;
+}
+.menu__list .featured:hover {
+  color: #d9d9d9;
 }
 .menu__list .pricing {
   margin-right: 80px;
   color: white;
 }
+.menu__list .pricing:hover {
+  color: #d9d9d9;
+}
 .menu__list .contack {
   margin-right: 236px;
   color: white;
 }
+.menu__list .contack:hover {
+  color: #d9d9d9;
+}
 .menu__list .signup {
   margin-right: 25px;
   color: white;
+}
+.menu__list .signup:hover {
+  color: #d9d9d9;
 }
 .menu .logo {
   margin-top: 54px;
@@ -75,7 +90,7 @@ body {
 }
 /*------main-top---------*/
 .main-top__wrapper {
-  background: #121d39;
+  background: url("../img/Rectangle 42.svg") no-repeat center;
 }
 .main-top {
   display: flex;
@@ -96,12 +111,14 @@ body {
   margin-top: 7px;
   font-size: 55px;
   color: white;
+  max-width: 500px;
 }
 .main-top .preview2 {
   margin-top: 30px;
   font-size: 25px;
   color: white;
   opacity: 0.5;
+  max-width: 550px;
 }
 .main-top .btn-info {
   border: none;
@@ -123,6 +140,25 @@ body {
   background: rgba(27, 138, 219, 0.22);
   position: relative;
   left: 60px;
+}
+.main-top .krug::after {
+  content: "";
+  position: absolute;
+  background: url("../img/Group 6.svg") no-repeat;
+  transform: rotate(200deg);
+  width: 100px;
+  height: 100px;
+  right: 0;
+  bottom: 50px;
+}
+.main-top .krug::before {
+  content: "";
+  position: absolute;
+  background: url("../img/Group 6.svg") no-repeat;
+  width: 100px;
+  height: 100px;
+  left: -30px;
+  top: 50px;
 }
 .main-top .krug img {
   position: absolute;
@@ -165,6 +201,16 @@ body {
 .main-middle .Ghazi .hotel-pictures {
   position: relative;
 }
+.main-middle .Ghazi .hotel-pictures::after {
+  content: "";
+  position: absolute;
+  background: url("../img/Group 6.svg") no-repeat;
+  transform: rotate(250deg);
+  width: 100px;
+  height: 100px;
+  right: -950px;
+  bottom: 300px;
+}
 .main-middle .Ghazi .hotel-pictures .img-ghazi {
   width: 362px;
   height: 424px;
@@ -204,6 +250,8 @@ body {
   font-size: 25px;
   line-height: 38px;
   margin-left: 70px;
+  max-width: 450px;
+  margin-top: 15px;
   color: #101729;
   opacity: 0.5;
 }
@@ -229,6 +277,16 @@ body {
 }
 .main-middle .Arslan .hotel-pictures {
   position: relative;
+}
+.main-middle .Arslan .hotel-pictures::before {
+  content: "";
+  position: absolute;
+  background: url("../img/Group 6.svg") no-repeat;
+  transform: rotate(90deg);
+  width: 100px;
+  height: 100px;
+  left: -430px;
+  top: 170px;
 }
 .main-middle .Arslan .hotel-pictures .img-arslan {
   width: 362px;
@@ -269,6 +327,8 @@ body {
   font-size: 25px;
   line-height: 38px;
   margin-left: 70px;
+  max-width: 450px;
+  margin-top: 15px;
   color: #101729;
   opacity: 0.5;
 }
@@ -333,6 +393,8 @@ body {
   font-size: 25px;
   line-height: 38px;
   margin-left: 70px;
+  max-width: 450px;
+  margin-top: 15px;
   color: #101729;
   opacity: 0.5;
 }
@@ -446,12 +508,14 @@ body {
   font-weight: 500;
   font-size: 45px;
   line-height: 68px;
+  max-width: 500px;
 }
 .main-bottom .main-bot2 .text-bot2 .textfeedback2 {
   font-weight: 400;
   font-size: 30px;
   line-height: 45px;
   margin-top: 16px;
+  max-width: 500px;
   color: #101729;
   opacity: 0.5;
 }
@@ -486,21 +550,36 @@ body {
   margin-left: 255px;
   color: black;
 }
+.menuf__list .home:hover {
+  color: #5a5a5a;
+}
 .menuf__list .featured {
   margin-right: 75px;
   color: black;
+}
+.menuf__list .featured:hover {
+  color: #5a5a5a;
 }
 .menuf__list .pricing {
   margin-right: 80px;
   color: black;
 }
+.menuf__list .pricing:hover {
+  color: #5a5a5a;
+}
 .menuf__list .contack {
   margin-right: 236px;
   color: black;
 }
+.menuf__list .contack:hover {
+  color: #5a5a5a;
+}
 .menuf__list .signup {
   margin-right: 25px;
   color: black;
+}
+.menuf__list .signup:hover {
+  color: #5a5a5a;
 }
 .menuf .logo {
   margin-top: 54px;

@@ -30,6 +30,7 @@ body{
 }
 
 
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -43,22 +44,37 @@ body{
             margin-right: 80px;
             margin-left:255px;
             color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
         }
         .featured{
             margin-right: 75px;
             color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
         }
         .pricing{
             margin-right: 80px;
             color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
         }
         .contack{
             margin-right: 236px;
             color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
         }
         .signup{
             margin-right: 25px;
             color: @list-color;
+            &:hover{
+                color: darken(@list-color, 15%);
+            }
         }
     }
     .logo{
@@ -90,13 +106,14 @@ body{
 /*------main-top---------*/
 
 .main-top__wrapper{
-    background: @bg-color;
+    background: url("../img/Rectangle 42.svg") no-repeat center;
+    
 }
 
 .main-top{
     display: flex;
     flex-direction: row;
-
+    
     .btn-list{
         border: none;
         margin-top: 95px;
@@ -113,12 +130,14 @@ body{
         margin-top: 7px;
         font-size: 55px;
         color: @list-color;
+        max-width: 500px;
     }
     .preview2{
         margin-top: 30px;
         font-size: 25px;
         color: @list-color;
         opacity: 0.5;
+        max-width: 550px;
     }
     .btn-info{
         border: none;
@@ -140,13 +159,33 @@ body{
         background: rgba(27, 138, 219, 0.22);
         position: relative;
         left: 60px;
+        &::after{
+            content: "";
+            position: absolute;
+            background: url("../img/Group 6.svg") no-repeat ;
+            transform: rotate(200deg);
+            width: 100px;
+            height: 100px;
+            right: 0;
+            bottom: 50px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            background: url("../img/Group 6.svg") no-repeat ;
+            width: 100px;
+            height: 100px;
+            left: -30px;
+            top: 50px;
+        }
         img {
             position: absolute;
             top: 50px;
-            left: 80px;
+            left: 80px;  
         }
-
+       
     }
+    
     .img-preview{
         width: 592px;
         height: 820px;        
@@ -191,16 +230,28 @@ body{
         display: flex;
         flex-direction: row;
         margin-top: 128px;
-
+        
         .hotel-pictures{
             position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                background: url("../img/Group 6.svg") no-repeat ;
+                transform: rotate(250deg);
+                width: 100px;
+                height: 100px;
+                right: -950px;
+                bottom: 300px;
+            }
+          
             .img-ghazi{
                 width: 362px;
                 height: 424px;
-                
         
                 background: url(image.png);
                 border-radius: 60px;
+
+               
 
                 
             }
@@ -248,6 +299,8 @@ body{
                 font-size: 25px;
                 line-height: 38px;
                 margin-left: 70px;
+                max-width: 450px;
+                margin-top: 15px;
 
                 color: #101729;
     
@@ -283,6 +336,16 @@ body{
 
         .hotel-pictures{
             position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background: url("../img/Group 6.svg") no-repeat ;
+                transform: rotate(90deg);
+                width: 100px;
+                height: 100px;
+                left: -430px;
+                top: 170px;
+            }
             .img-arslan{
                 width: 362px;
                 height: 424px;
@@ -337,6 +400,8 @@ body{
                 font-size: 25px;
                 line-height: 38px;
                 margin-left: 70px;
+                max-width: 450px;
+                margin-top: 15px;
 
                 color: #101729;
     
@@ -424,6 +489,8 @@ body{
                 font-size: 25px;
                 line-height: 38px;
                 margin-left: 70px;
+                max-width: 450px;
+                margin-top: 15px;
 
                 color: #101729;
     
@@ -562,6 +629,7 @@ body{
                 font-weight: 500;
                 font-size: 45px;
                 line-height: 68px;
+                max-width: 500px;
             }
 
             .textfeedback2{
@@ -569,7 +637,7 @@ body{
                 font-size: 30px;
                 line-height: 45px;
                 margin-top: 16px;
-
+                max-width: 500px;
                 color: #101729;
 
                 opacity: 0.5;
@@ -609,23 +677,41 @@ body{
             margin-left:255px;
             color: black;
 
-
+            &:hover{
+                color: darken(grey ,15%);
+            }
         }
         .featured{
             margin-right: 75px;
             color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
         }
         .pricing{
             margin-right: 80px;
             color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
         }
         .contack{
             margin-right: 236px;
             color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
         }
         .signup{
             margin-right: 25px;
             color: black;
+
+            &:hover{
+                color: darken(grey ,15%);
+            }
         }
     }
     .logo{
